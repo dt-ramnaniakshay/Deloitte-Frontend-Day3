@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form handling</title>
+    <script src="app.js"></script>
+</head>
+<body>
+    <h1>Form registration</h1>
+    <form onsubmit="checkForm(event)">
+        <label for="fullName">Full name</label>
+        <input type="text" name="fullName" id="fullName">
+        <br>
+        <label for="email">Email ID</label>
+        <input type="email" name="email" id="email">
+        <br>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password">
+        <br>
+        <label for="cpassword">Password</label>
+        <input type="password" name="cpassword" id="cpassword">
+        <p style="color: red;" id="error_p"></p>
+        <br>
+        <input type="submit" value="SignUp" >
+    </form>
+    <h1 id="output"></h1>
+</body>
+</html>
